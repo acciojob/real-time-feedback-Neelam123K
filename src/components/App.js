@@ -23,7 +23,7 @@ const App = () => {
     if (!value.trim()) {
       setEmailError("Email is required.");
     } else if (!emailPattern.test(value)) {
-      setEmailError("Please enter a valid email.");
+      setEmailError("Invalid email format");
     } else {
       setEmailError("");
     }
